@@ -10,7 +10,7 @@ jobs:
   docker:
    - image: cimg/base:2020.01
   steps:
-   - run: qomdjndJFNAJNFJNFLNASKFN
+   - run: return 1
    - run: 
       name: on error
       command: echo "Hello Error"
