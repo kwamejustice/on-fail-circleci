@@ -5,16 +5,16 @@ orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
-  jobs:
-   checking_fail:
-    docker:
-     - image: circleci/node.13.8.0
-    steps:
-     - run: qomdjndJFNAJNFJNFLNASKFN
-     - run: 
-        name: no error
-        command: echo "Hello Error"
-        when: on_fail
+jobs:
+ checking_fail:
+  docker:
+   - image: circleci/node.13.8.0
+  steps:
+   - run: qomdjndJFNAJNFJNFLNASKFN
+   - run: 
+      name: on error
+      command: echo "Hello Error"
+      when: on_fail
 workflows:
   # Name the workflow "welcome"
   welcome:
