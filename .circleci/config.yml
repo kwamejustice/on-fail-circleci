@@ -10,7 +10,7 @@ jobs:
   docker:
    - image: cimg/base:2020.01
   steps:
-   - run: return 1
+   - run: teep
    - run: 
       name: on error
       command: echo "Hello Error"
